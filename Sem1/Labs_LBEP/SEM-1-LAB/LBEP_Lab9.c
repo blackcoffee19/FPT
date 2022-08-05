@@ -15,6 +15,7 @@ struct Time{
 	int minutes;
 	int second;
 }clock1,clock2;
+
 void period(struct Time* time1,struct Time* time2){
 	int pHour,pMinutes,pSecond;
 	if(((*time1).hour<1 ||(*time1).hour>24)&&((*time2).hour<1||(*time2).hour>24)){
@@ -47,7 +48,7 @@ void period(struct Time* time1,struct Time* time2){
 	};
 }
 void Rutgon(int *tu, int *mau){
-	int i = 2;		
+	int i = 2;
 	do{
 		if(*tu%i == 0 && *mau%i == 0){
 			*tu /= i;
@@ -202,6 +203,22 @@ int main(){
 											printf("\nError!!\n");
 											break;
 									};
+								}
+							};
+							printf("\tNo | \t Name |\tClass |\tMarks\n");
+							for(int i =0; i<num1;i++){
+								printf("\t%d \t %s   \t %s \t %d\n",i+1,(stu+i)->name,(stu+i)->stu_class,(stu+i)->mark);
+							};
+							break;
+							case 4:
+							struct Student stu_temp;
+							for(int j = 0; j<num1-1;j++){
+								for(int i = j+1; i <num1;i++){
+									if((stu+i)->name[0]<(stu+j)->name[0] ){
+										stu_temp = *(stu+i);
+										*(stu+i) = *(stu +j);
+										*(stu+j) = stu_temp;
+									}
 								}
 							};
 							printf("\tNo | \t Name |\tClass |\tMarks\n");
