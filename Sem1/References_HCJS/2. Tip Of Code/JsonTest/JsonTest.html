@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>Click the table headers to change the sorting order:</p>
+
+<div ng-app="myApp" ng-controller="namesCtrl">
+
+    <table border="1" width="70%">
+        <tr>
+            <th ng-click="orderByMe('code')">Name</th>
+            <th ng-click="orderByMe('name')">Country</th>
+            <th ng-click="orderByMe('Price')">Name</th>
+            <th ng-click="orderByMe('img')">Image</th>
+        </tr>
+        <tr ng-repeat="x in names | orderBy:myOrderBy">
+            <td>{{x.code}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.price}}</td>
+            <td><img src="{{x.img}}" width="150"></td>
+        </tr>
+    </table>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    $scope.names = [
+        {code: 'LG43', name:'Smart TV LG 43', price: 7900, img:'img/product.png'},
+        {code: 'SN54', name:'Sony 54', price: 1700, img:'img/product.png'},
+        {code: 'SS49', name:'SamSung 49', price: 9000, img:'img/product.png'},
+		{code: 'SS59', name:'SamSung Note 10', price: 19000, img:'img/product.png'}
+        ];
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+    }
+});
+</script>
+
+</body>
+</html>
