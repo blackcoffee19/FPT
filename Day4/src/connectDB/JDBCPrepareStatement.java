@@ -45,7 +45,7 @@ public class JDBCPrepareStatement {
             st.setString(1,code);
             st.setString(2,name);
             st.setInt(3,price);
-            int count  = st.executeUpdate();
+            int count  = Integer.parseInt(st.executeUpdate());
             if(count == 0){
                 System.out.println("Nothing to insert!");
             }
