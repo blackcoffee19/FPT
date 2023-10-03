@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Ex2.Models.PeopleDto>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Show All</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto mt-5">
+                <h3>Welcome </h3>
+                <hr />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(e=> Model.First().Id)</th>
+                            <th>@Html.DisplayNameFor(e=> Model.First().Username)</th>
+                            <th>@Html.DisplayNameFor(e=> Model.First().Role)</th>
+                            <th>@Html.DisplayNameFor(e=> Model.First().Balence)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (!Model.Any())
+                        {
+                            <tr>
+                                <td>No data</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach(var pp in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(x=>pp.Id)</td>
+                                    <td>@Html.DisplayFor(x=>pp.Username)</td>
+                                    <td>@if (pp.Role.Value)
+                                        {
+                                           <span>Employee</span>
+                                        }else{
+                                            <span>Customer</span>
+                                        }
+                                    </td>
+                                    <td>@Html.DisplayFor(x=>pp.Balence)</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

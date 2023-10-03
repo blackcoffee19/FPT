@@ -1,0 +1,28 @@
+extends ../layout 
+block content 
+    h1 Product List
+    hr
+    a(href="/product/create", class="btn btn-primary",style="width:80px") Create 
+    table(class='table')
+        thead
+            tr 
+                th ID 
+                th Name 
+                th Price 
+                th Image
+                th Actions 
+        tbody
+            if products !=null 
+                each item in products
+                    tr 
+                        td= item._id 
+                        td= item.name 
+                        td= item.price 
+                        td
+                            img(src="/images/"+item.image, alt=item.image,width=120,class='img-fluid')
+                        td 
+                            a(href=`/product/update/${item._id}`,class='btn btn-warning me-2') Update
+                            a(href='javascript:void(0);', class='btn btn-danger btn-delete',onclick=`$.ajax({url:'/product/delete',type:'DELETE',data: {id:'${item._id}'}});location.reload();`) Delete
+            else 
+                tr 
+                    td(colspan='5') No Data  

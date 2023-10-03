@@ -1,0 +1,41 @@
+﻿@model Ex2.Models.PeopleDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto mt-5">
+                <h3>Welcome </h3>
+                <hr />
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Username:</td>
+                            <td>@Model.Username</td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td>@Model.Role</td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td>@Model.Balence</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

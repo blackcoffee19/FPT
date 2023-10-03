@@ -1,0 +1,24 @@
+extends ../layout
+block content 
+    h1 Update Product 
+    hr
+    button(onclick="history.back()", class="btn btn-dark") Back
+    .row 
+        .col-5.mx-auto 
+            form(action=`/product/update/${product._id}`,method="POST",enctype="multipart/form-data")
+                .mb-3.row 
+                    label.col-form-label.col-4(for="name") Name 
+                    .col-8 
+                        input(type="text",name="name",value=product.name, class="form-control")
+                .mb-3.row 
+                    label.col-form-label.col-4(for="price") Price
+                    .col-8 
+                        input(type="text",name="price",value=product.price, class="form-control")
+                .mb-3.row 
+                    label.col-form-label.col-4(for="image") Image 
+                    .col-8 
+                        img(src=`/images/${product.image}`, alt=product.image, width=120, class="img-fluid")
+                        hr
+                        input(type="file",name="image", class="mt-2")
+                .row 
+                    input(type="submit", value="Update",class="btn btn-primary col-3 mx-auto")

@@ -1,0 +1,100 @@
+﻿@model Ex3.Models.ItemDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listitem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto mt-4">
+                <h3>List Items</h3>
+                <div class="row">
+                    <a asp-action="CreateItem" class="btn btn-primary col-3 my-3">Create Item</a>
+                </div>
+                <hr />
+                <form method="post" asp-action="CreateItem" enctype="multipart/form-data">
+                    <div class="row mb-3">
+                        <label class="col-form-label col-3">Item Code</label>
+                        <div class="col-7">
+                            <input asp-for="ItemCode" class="form-control" />
+                        </div>
+                        <span class="text-danger col-2">*</span>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-3 col-form-label">Item Name</label>
+                        <div class="col-7">
+                            <input asp-for="ItemName" class="form-control" />
+                        </div>
+                        <span class="text-danger col-2">*</span>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label asp-for="Price" class="col-3 col-form-label"></label>
+                        <div class="col-7">
+                        <input asp-for="Price" class="form-control" />
+                        </div>
+                        <span class="text-danger col-2">*</span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Photo"></label>
+                        <input asp-for="Photo" class="form-control" />
+                    </div>
+                    <div class="row mb-3">
+                        <input class="btn btn-primary col-3 mx-auto" type="submit" value="Create" />
+                        <input class="btn btn-secondary col-3 mx-auto" type="reset" value="Reset" />
+                    </div>
+                </form>
+                <hr />
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th colspan="2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (ViewData["items"] == null)
+                        {
+                            <tr>
+                                <td colspan="7" class="text-center">No data</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach (var item in (List<Ex3.Models.Item>) ViewData["items"])
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(x=>item.ItemCode)</td>
+                                    <td>@Html.DisplayFor(x=>item.ItemName)</td>
+                                    <td>
+                                        <img src="~/Images/@item.Image" width="120"/>
+                                    </td>
+                                    <td>@Html.DisplayFor(x=>item.Price)</td>
+                                    <td>
+                                        <a asp-action="EditItem" asp-route-id=@item.Id class="btn btn-warning">Edit</a>
+                                    </td>
+                                    <td>
+                                        <a asp-action="DeleteItem" asp-route-id=@item.Id class="btn btn-danger" onclick="return confirm('Do you really want to delete this item?')">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

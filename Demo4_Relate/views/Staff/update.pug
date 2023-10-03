@@ -1,0 +1,29 @@
+extends ../layout 
+block content 
+    .container-fluid 
+        .row 
+            .col-6.mx-auto 
+                h3 Update Staff 
+                if(error)
+                    .alert.alert-danger=error 
+                if(message)
+                    .alert.alert-success=message 
+                form(action=`/staff/update/${staff._id}`, method="post")
+                    .row.mb-3 
+                        label(for="name", class="col-form-label col-3") Staff Name
+                        .col-9  
+                            input(type="text",name="name",class="form-control",value=staff.name)
+                    .row.mb-3 
+                        label(for="salary",class="col-3 col-form-label") Salary 
+                        .col-9 
+                            input(type="text",name="salary",class="form-control",value=staff.salary)
+                    .row.mb-3 
+                        label(for="role",class="col-3 col-form-label") Role 
+                        .col-9 
+                            input(type="text", name="role",class="form-control",value=staff.role)
+                    .row.mb-3
+                        ul  
+                            each item in staff.project
+                                li=item.name 
+                    .row.mb-3 
+                        input(type="submit",class="btn btn-primary col-3 mx-auto",value="Update")

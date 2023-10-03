@@ -1,0 +1,42 @@
+﻿@model Ex3.Models.Account
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto mt-5">
+                <h3>Login</h3>
+                <div class="row my-3">
+                    <a asp-action="CreateUser" class="btn btn-primary col-3">Create New Account</a>
+                </div>
+                <hr />
+                <form asp-action="Login" method="post">
+                    <div class="row mb-3">
+                        <label asp-for="Username"></label>
+                        <input asp-for="Username" class="form-control" />
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" />
+                    </div>
+                    <div class="row mb-3">
+                        <input class="btn btn-primary col-3 mx-auto" type="submit" value="Login" />
+                        <input class="btn btn-secondary col-3 mx-auto" type="reset" value="Reset" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

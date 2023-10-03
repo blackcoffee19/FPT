@@ -1,0 +1,50 @@
+﻿@model TestAdminCRUD.Models.AccountModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 mt-5 mx-auto">
+                <h2>Sign up</h2>
+                <hr />
+                <form method="post" asp-action="Signup" enctype="multipart/form-data">
+                    <div class="row mb-3">
+                        <label asp-for="Name" class="form-label"></label>
+                        <input class="form-control" asp-for="Name" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="form-label" asp-for="Email"></label>
+                        <input class="form-control" asp-for="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input class="form-control" asp-for="Password"  />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Photo" class="form-label"></label>
+                        <input class="form-control" asp-for="Photo" />
+                    </div>
+                    <div class="row mb-3">
+                        <input type="submit" value="Sign up" class="btn btn-primary col-3 mx-auto" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

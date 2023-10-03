@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <h2>Admin</h2>
+                <ul class="list-group mt-3" style="list-style:none">
+                    <li>
+                        <a asp-action="CreateNews" class="text-decoration-none">Create News</a>
+                    </li>
+                    <li>
+                        <a asp-action="ListNews" class="text-decoration-none">List News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+SQL Server connection
+
+PM> scaffold-dbcontext "Server=.,1433;Database=SocialMedia;trusted_connection=true;TrustServerCertificate=true" Microsoft.EntityFrameworkCore.SqlServer -outputDir Models

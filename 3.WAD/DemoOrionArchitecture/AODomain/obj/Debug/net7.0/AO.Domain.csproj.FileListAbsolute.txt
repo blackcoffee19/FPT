@@ -1,0 +1,11 @@
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\bin\Debug\net7.0\AO.Domain.deps.json
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\bin\Debug\net7.0\AO.Domain.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\bin\Debug\net7.0\AO.Domain.pdb
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\AO.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\AO.Domain.AssemblyInfoInputs.cache
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\AO.Domain.AssemblyInfo.cs
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\AO.Domain.csproj.CoreCompileInputs.cache
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\AO.Domain.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\refint\AO.Domain.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\AO.Domain.pdb
+C:\code\FPT\3.WAD\DemoOrionArchitecture\AODomain\obj\Debug\net7.0\ref\AO.Domain.dll

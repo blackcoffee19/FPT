@@ -1,0 +1,68 @@
+﻿@model IEnumerable<TestAdminCRUD.Models.AccountModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AdminSite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mt-5 mx-auto">
+                <h2>Admin CRUD</h2>
+                <h4>List Product</h4>
+                <hr />
+                <div class="row">
+                    <a asp-action="Create" class="btn btn-primary col-3 mx-auto" >Create new Account</a>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <td>@Html.DisplayNameFor(x=>x.Id)</td>
+                        <td>@Html.DisplayNameFor(x=>x.Name)</td>
+                        <td>@Html.DisplayNameFor(x=>x.Image)</td>
+                        <td>@Html.DisplayNameFor(x=> x.Email)</td>
+                        <td>@Html.DisplayNameFor(x=>x.Password)</td>
+                        <td>@Html.DisplayNameFor(x=>x.Role)</td>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        @if(Model == null)
+                        {
+                            <tr>
+                                <td colspan="4">No Data</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach(var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(x=>item.Id)</td>
+                                    <td>@Html.DisplayFor(x=>item.Name)</td>
+                                    <td style="width:120px">
+                                        <img src="~/Images/@item.Image" class="img-fluid"/>
+                                    </td>
+                                    <td>@Html.DisplayFor(x=>item.Email)</td>
+                                    <td>@Html.DisplayFor(x=>item.Password)</td>
+                                    <td>@Html.DisplayFor(x=>item.Role)</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <a asp-action="Signup" class="btn btn-dark mt-3">Signup</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

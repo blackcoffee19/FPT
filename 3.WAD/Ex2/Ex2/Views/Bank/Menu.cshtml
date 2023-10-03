@@ -1,0 +1,33 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto mt-5">
+                <h3>Welcome @HttpContextAccessor.HttpContext!.Session.GetString("Username") </h3>
+                <ul>
+                    <li>
+                        <a asp-action="ShowAll">Show All Customers</a>
+                    </li>
+                    <li>
+                        <a asp-action="Delete">Delete Customer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

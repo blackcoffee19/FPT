@@ -1,0 +1,40 @@
+extends ../layout
+block content 
+    .container-fluid 
+        .row 
+            .col-lg-8.col-md-9.mx-auto 
+                h4 List Staff 
+                .row
+                    a(href="/project",class="btn btn-secondary col-3 me-3") List Project  
+                    a(href="/staff/create", class="btn btn-primary col-3") Create new Staff 
+                hr
+                if (error)
+                    .alert.alert-danger=error 
+                if(message)
+                    .alert.alert-success=message
+
+                table.table 
+                    thead  
+                        tr 
+                            th Name 
+                            th Projects 
+                            th Salary 
+                            th Role
+                            th Actions 
+                    tbody 
+                        if(staffs.length==0)
+                            tr 
+                                td(colspan=4) No data 
+                        else 
+                            each staff in staffs
+                                tr 
+                                    td=staff.name 
+                                    td
+                                        each pj in staff.project 
+                                            p=pj.name
+                                    td=staff.salary 
+                                        span VND
+                                    td=staff.role
+                                    td.row 
+                                        a(href=`/staff/update/${staff._id}`,class="btn btn-warning col-3") Update
+                                        a(href=`/staff/delete/${staff._id}`,class="btn btn-danger col-3 ms-1",onclick="return confirm('Do you really want to delete this staff?');") Delete 

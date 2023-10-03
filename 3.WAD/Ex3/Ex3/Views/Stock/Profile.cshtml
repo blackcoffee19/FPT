@@ -1,0 +1,49 @@
+﻿@model Ex3.Models.Account
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto mt-5">
+                <h3>Profile</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="~/Images/@Model.Image"  class="img-fluid"/>
+                    </div>
+                    <div class="col-8">
+                        <table class="table">
+                            <tr>
+                                <td>@Html.DisplayNameFor(x=>Model.Username) </td>
+                                <td>@Model.Username</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(x=>Model.Role): </td>
+                                <td>@if(Model.Role == true)
+                                    {
+                                        <p>Admin</p>
+                                    }else
+                                    {
+                                        <p>User</p>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a asp-action="Index" class="btn btn-dark col-2">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

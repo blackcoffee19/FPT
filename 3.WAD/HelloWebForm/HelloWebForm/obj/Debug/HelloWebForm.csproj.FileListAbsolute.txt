@@ -1,0 +1,2 @@
+C:\code\FPT\3.WAD\HelloWebForm\HelloWebForm\obj\Debug\HelloWebForm.csproj.AssemblyReference.cache
+C:\code\FPT\3.WAD\HelloWebForm\HelloWebForm\obj\Debug\HelloWebForm.csproj.CoreCompileInputs.cache

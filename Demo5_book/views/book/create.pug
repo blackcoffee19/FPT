@@ -1,0 +1,18 @@
+extends ../layout
+block content 
+    .container-fluid 
+        .row
+            .col-4.mx-auto
+                h2.text-center Create Book 
+                form(action="/book/create" ,method="POST", enctype="multipart/form-data")
+                    .mb-3.row
+                        lable(for="title",class="form-label") Book Title 
+                        input(type="text",name="title",class="form-control")
+                    .mb-3.row
+                        lable(for="price",class="form-label") Price 
+                        input(type="text",name="price",class="form-control")
+                    .mb-3.row
+                        lable(for="image",class="form-label") Book Image 
+                        input(type="file",name="image",class="form-file mt-3")
+                    .mb-3.row
+                        input(type="submit",value="Create Book",class="col-3 mx-auto btn btn-primary") 

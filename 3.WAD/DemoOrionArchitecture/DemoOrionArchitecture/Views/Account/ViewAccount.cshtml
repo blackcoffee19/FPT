@@ -1,0 +1,54 @@
+﻿@model IEnumerable<OA.Service.Dtos.AccountDto>
+@{
+    Layout = null;
+
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List Account</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h3>Account List</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(e=>e.Id)</th>
+                            <th>@Html.DisplayNameFor(e=>e.Email)</th>
+                            <th>@Html.DisplayNameFor(e=>e.Phone)</th>
+                            <th colspan="2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if(!Model.Any())
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center">No data</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach(var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(x=>item.Id)</td>
+                                    <td>@Html.DisplayFor(x=>item.Email)</td>
+                                    <td>@Html.DisplayFor(x=>item.Phone)</td>
+                                    <td>Edit</td>
+                                    <td>Delete</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

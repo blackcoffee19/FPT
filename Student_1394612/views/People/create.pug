@@ -1,0 +1,30 @@
+extends ../layout 
+block content 
+    .container-fluid 
+        .row 
+            .col-lg-8.col-md-10.mx-auto 
+                h3.text-center Create new Person 
+                if(error)
+                    .alert.alert-danger=error 
+                if(message)
+                    .alert.alert-success=message 
+                a(href="/people",class="btn btn-dark my-3") Back To List 
+                form(action="/people/create", method="post",enctype="multipart/form-data")
+                    .row.mb-3 
+                        label(for="name",class="col-3 col-form-label") Fullname 
+                        .col-9 
+                            input(type="text",name="name",class="form-control")  
+                    .row.mb-3 
+                        label(for="dob",class="col-3 col-form-label") DOB 
+                        .col-9 
+                            input(type="date", name="dob")
+                    .row.mb-3 
+                        label(for="reputation",class="col-3 col-form-label") Reputation 
+                        .col-9 
+                            input(type="text",name="reputation",class="form-control")
+                    .row.mb-3 
+                        label(for="image",class="col-3 col-form-label") Photo
+                        .col-9 
+                            input(type="file",name="image",class="form-file")
+                    .row 
+                        input(type="submit", value="Create",class="btn btn-primary col-3 mx-auto")

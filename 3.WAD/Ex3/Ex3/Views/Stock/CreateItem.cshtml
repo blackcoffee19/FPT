@@ -1,0 +1,47 @@
+﻿@model Ex3.Models.ItemDto
+@{
+    Layout = null;
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Item</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto mt-5">
+                <h3>Login</h3>
+                <hr />
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row mb-3">
+                        <label asp-for="ItemCode"></label>
+                        <input asp-for="ItemCode" class="form-control" />
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="ItemName"></label>
+                        <input asp-for="ItemName" class="form-control" />
+                    </div>
+
+                    <div class="row mb-3">
+                        <label asp-for="Price"></label>
+                        <input asp-for="Price" class="form-control" />
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Photo"></label>
+                        <input asp-for="Photo" class="form-control" />
+                    </div>
+                    <div class="row mb-3">
+                        <input class="btn btn-primary col-3 mx-auto" type="submit" value="Create" />
+                        <input class="btn btn-secondary col-3 mx-auto" type="reset" value="Reset" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

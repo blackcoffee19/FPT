@@ -1,0 +1,31 @@
+﻿@model TestAdminCRUD.Models.AccountModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CustomerSite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 mt-5 mx-auto">
+                <h4>Profile</h4>
+                <hr />
+                <img src="~/Images/@Model.Image" width="200" class="img-fluid"/>
+                <h4>Name : @Html.DisplayFor(x=>Model.Name)</h4>
+                <p>Email : @Html.DisplayFor(x=>Model.Email)</p>
+                <p>Role : @Html.DisplayFor(x=>Model.Role)</p>
+                <a asp-action="Signup" class="mt-3 btn btn-dark">Signup</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

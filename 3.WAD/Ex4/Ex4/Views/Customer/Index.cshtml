@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Ex4.Models.Customer>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>List Customer</title>
+    <style>
+        th{
+            font-weight:700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 mx-auto">
+                <h1>Hello world</h1>
+                <a asp-action="Create">Create New</a>
+                <div class="row my-3">
+                    <form method="get" asp-action="Search" class="row">
+                        <label for="s" class="col-form-label col-2">Name</label>
+                        <div class="col-8">
+                             <input type="search" name="s" class="form-control" placeholder="Enter name..."/>
+                        </div>
+                        <input type="submit" class="btn btn-secondary col-2" value="Filter"/>
+                    </form>
+                </div>
+                <table class="table-borderless table">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(x=>Model.First().Name)</th>
+                            <th>@Html.DisplayNameFor(x=>Model.First().Birthday)</th>
+                            <th>@Html.DisplayNameFor(x=>Model.First().Gender)</th>
+                            <th>@Html.DisplayNameFor(x=>Model.First().Email)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (!Model.Any()|| Model.Count() ==0)
+                        {
+                            <tr><td class="text-center">No data customer</td></tr>
+                        }
+                        else
+                        {
+                            @foreach(var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(x=>item.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.Birthday)</td>
+                                    <td>
+                                        @if(item.Gender.Value == true)
+                                        {
+                                            <span>Male</span>
+                                        }
+                                        else
+                                        {
+                                            <span>Female</span>
+                                        }
+                                    </td>
+                                    <td>@Html.DisplayFor(x=>item.Email)</td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id=@item.Id onclick="return confirm('Do you want to delete Customer ?');">Delete</a>
+                                        <a asp-action="UpdateOrDelete" asp-route-id=@item.Id class="ms-3">View Detail</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿@page
+@model DemoRazorPage.Pages.Products.IndexModel
+@{
+}
+
+<h3>List Product</h3>
+<a asp-page="Create" class="btn btn-primary">Create Product</a>
+<hr />
+<table>
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x=>x.Products.First().Id)</th>
+            <th>@Html.DisplayNameFor(x=>x.Products.First().Name)</th>
+            <th>@Html.DisplayNameFor(x=>x.Products.First().Price)</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!Model.Products.Any())
+        {
+            <tr><td colspan="6">No data</td></tr>
+        }
+        else
+        {
+            foreach(var item in Model.Products)
+            {
+               <tr>
+                   <td>@item.Id</td>
+                   <td>@item.Name</td>
+                   <td>@item.Price</td>
+                   <td>Edit</td>
+                   <td>Delete</td>
+               </tr> 
+            }
+        }
+
+    </tbody>
+</table>

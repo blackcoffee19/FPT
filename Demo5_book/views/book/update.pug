@@ -1,0 +1,25 @@
+extends ../layout 
+block content 
+    .container-fluid 
+        .row
+            .col-6.mx-auto 
+                h3.text-center Update Book 
+                hr
+                .row.mb-3
+                    a(href="/book",class="btn btn-secondary col-2") Back 
+                form(action=`/book/update/${book._id}`, method="post",enctype="multipart/form-data",class="row")
+                    label(for="title",class="col-form-label col-3 mb-3") Title 
+                    .col-9.mb-3
+                        input(type="text",value=book.title,name="title",class="form-control")
+                    label(for="price",class="col-form-label col-3 mb-3") Price 
+                    .col-9.mb-3
+                        input(type="number",value=book.price, name="price",class="form-control")
+                    label(for="image",class="col-form-label col-3 mb-3") Image
+                    .col-9.mb-3
+                        img(src=`/images/${book.image}`, alt=book.image, width=120,class="img-fluid")
+                        br
+                        input(type="file",class="form-file",name="image")
+                    .col-12.row 
+                        input(type="submit",value="Update",class="btn btn-primary col-3 mx-auto")
+                        
+                    

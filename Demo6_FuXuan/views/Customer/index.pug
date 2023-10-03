@@ -1,0 +1,42 @@
+extends ../layout
+block  content
+    .container-fluid 
+        .row 
+            .col-lg-10.col-md-12.mx-auto 
+                h4.text-center List Customer 
+                a(href="/customer/create",class="btn btn-primary") Create new Customer 
+                if(error)
+                    .alert.alert-danger=error 
+                if(message)
+                    .alert.alert-success=message 
+                hr 
+                table.table 
+                    thead 
+                        tr 
+                            th Id 
+                            th Name 
+                            th Image 
+                            th Phone 
+                            th Email 
+                            th Password 
+                            th Actions
+                    tbody 
+                        if(customers.length==0)
+                            tr 
+                                td.text-center(colspan="7") No data
+                        else 
+                            each item in customers 
+                                tr 
+                                    td=item._id 
+                                    td=item.name 
+                                    td 
+                                        img(src=`/images/${item.image}`, alt=item.image,class="img-fluid",width="120")
+                                    td=item.phone 
+                                    td=item.email 
+                                    td=item.password 
+                                    td.row
+                                        a(href=`/customer/update/${item._id}`,class="btn btn-warning col-4") Update 
+                                        .col-4 
+                                            form(action="/customer/delete", method="post",onsubmit="return confirm('Do you want to delete customer?')")
+                                                input(type="hidden", name="id",value=item._id)
+                                                input(type="submit", value="Delete",class="btn btn-danger")  

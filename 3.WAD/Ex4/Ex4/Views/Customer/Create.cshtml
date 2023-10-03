@@ -1,0 +1,65 @@
+﻿@model Ex4.Models.Customer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 mx-auto mt-3">
+                <h4 class="my-3 ">Create New</h4>
+                <form method="post">
+                    <div class="row mb-3">
+                        <label asp-for="Name" class="col-form-label col-2"></label>
+                        <div class="col-10">
+                            <input asp-for="Name" class="form-control" />
+                        </div>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Birthday" class="col-form-label col-2"></label>
+                        <div class="col-10">
+                            <input asp-for="Birthday" />
+                        </div>
+                        <span asp-validation-for="Birthday" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Email" class="col-form-label col-2"></label>
+                        <div class="col-10">
+                            <input asp-for="Email" class="form-control"/>
+                        </div>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Gender" class="col-form-label col-2"></label>
+                        <div class="col-10 row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" asp-for="Gender" id="male" value="true">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="female" asp-for="Gender" value="false">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn btn-primary col-3 mx-auto" value="Create"/>
+                        <input type="reset" class="btn btn-secondary col-3 mx-auto" value="Reset"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

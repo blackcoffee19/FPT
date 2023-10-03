@@ -1,0 +1,30 @@
+﻿@model ProductOnion.Models.ProductDto
+@{
+    
+}
+<h3>Create New Product</h3>
+<hr />
+<div asp-validation-summary="ModelOnly"></div>
+
+
+@* Default call to ProductController.Create action *@
+<form method="post" enctype="multipart/form-data">
+    <div class="row mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control"/>
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="Photo" class="form-label"></label>
+        <input asp-for="Photo" class="form-control" />
+        <span asp-validation-for="Photo" class="text-danger"></span>
+    </div>
+    <div class="row mb-3">
+        <input type="submit" value="Create" class="btn btn-primary col-3 mx-auto"/>
+    </div>
+</form>

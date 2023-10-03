@@ -1,0 +1,24 @@
+extends ../layout 
+block content 
+    .container-fluid 
+        .row 
+            .col-lg-8.col-md-10.mx-auto 
+                h2 Detail of Famous People and Inspirational People
+                .row 
+                    img(src=`/images/${people.photo}`, alt=people.photo,class='img-fluid col-4')
+                    .col-6 
+                        table.table 
+                            tr 
+                                td 
+                                    b FullName 
+                                td=people.fullname
+                            tr 
+                                td 
+                                    b Date of Birth 
+                                td=people.dob.toLocaleString().split(',')[0]
+                            tr 
+                                td 
+                                    b Reputation as 
+                                td=people.reputation 
+                hr
+                a(href="/people",class="text-center") Back to Index 

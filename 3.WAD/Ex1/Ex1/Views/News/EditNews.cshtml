@@ -1,0 +1,41 @@
+﻿@model Ex1.Models.NewsDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditNews</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h3>Edit News</h3>
+                <hr />
+                <form method="post">
+                    <div class="row mb-3">
+                        <label asp-for="HeadLine" class="form-label"></label>
+                        <input asp-for="HeadLine" class="form-control" />
+                        <span asp-validation-for="HeadLine" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="ContentOfNews" class="form-label"></label>
+                        <input asp-for="ContentOfNews" class="form-control" />
+                        <span asp-validation-for="ContentOfNews" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <input type="submit" value="Edit" class="col-3 mx-auto btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

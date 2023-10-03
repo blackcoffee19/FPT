@@ -1,0 +1,28 @@
+extends ../layout
+block content 
+    .container-fluid 
+        .row 
+            .col-lg-4.col-md-6.mx-auto
+                h4.text-center Create new Project 
+                if (error)
+                    .alert.alert-danger=error 
+                form(action="/project/create" method="POST")
+                    .mb-3 
+                        label(for="name",class="form-label") Project name:
+                        input(type="text",class="form-control", name="name")
+
+                    .row.mb-3 
+                        label(for="staffs",class="col-form-label col-3") Add Staffs 
+                        .col-9
+                            if staffs.length == 0 
+                                .alert.alert-danger There are no staff 
+                                
+                            else
+                                each staff in staffs    
+                                    .form-check.form-check-inline
+                                        input(type="checkbox", name="staffs", value=staff._id,class="form-check-input",id=staff._id) 
+                                        label(for=staff._id,class="form-check-label")=staff.name  
+                            
+                        a(href="/staff/create",class="btn btn-secondary col-3") Add Staff 
+                    .row 
+                        input(type="submit", value="Submit",class="btn btn-primary col-3 mx-auto")

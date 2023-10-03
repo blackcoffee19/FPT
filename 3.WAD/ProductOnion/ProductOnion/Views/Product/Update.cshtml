@@ -1,0 +1,29 @@
+﻿@model ProductOnion.Models.ProductDto
+@{
+}
+<h3>Update Product</h3>
+<div class="row">
+    <form method="post" class="col-6" enctype="multipart/form-data">
+        <div class="row mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Price" class="form-label"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <div>
+                    <img src="~/Images/@Model.Image" class="img-fluid"/>
+            </div>
+            <label asp-for="Photo" class="form-label"></label>
+            <input asp-for="Photo" class="form-control" />
+            <span asp-validation-for="Photo" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <input type="submit" value="Create" class="btn btn-primary col-3 mx-auto" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Service.deps.json
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Service.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Service.pdb
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.AssemblyInfoInputs.cache
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.AssemblyInfo.cs
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.csproj.CoreCompileInputs.cache
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\refint\OA.Service.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.pdb
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\ref\OA.Service.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Domain.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Repository.dll
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Domain.pdb
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\bin\Debug\net7.0\OA.Repository.pdb
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.csproj.AssemblyReference.cache
+C:\code\FPT\3.WAD\DemoOrionArchitecture\OAService\obj\Debug\net7.0\OA.Service.csproj.CopyComplete

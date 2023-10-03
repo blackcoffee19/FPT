@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Day3.Models.Student>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-7 mx-auto">
+        <h2>List Student</h2>
+        @* <a href="Student/Create">Create Student</a> *@
+        <a asp-action="Create">Create</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> @Html.DisplayNameFor(model => model.Id)</th>
+                    <th>@Html.DisplayNameFor(model => model.Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model.Count()==0)
+                {
+                    <tr><td colspan="3">No data</td></tr>
+                }
+                else
+                {
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(m=>item.Id)</td>
+                            <td>@Html.DisplayFor(m=>item.Name)</td>
+                            <td>@Html.DisplayFor(m=>item.Email)</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

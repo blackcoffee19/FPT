@@ -1,0 +1,40 @@
+extends ../layout
+
+block content 
+    .container-fluid 
+        .row 
+            .col-lg-8.col-md-9.mx-auto
+                if (error)
+                    .alert.alert-danger=error 
+                if(message)
+                    .alert.alert-success=message
+
+                h3.text-center List Project
+                .row
+                    a(href="/staff",class="btn btn-secondary col-3 me-3") List Staff
+                    a(href="/project/create" , class="btn btn-primary col-3") Create new Project
+                hr
+                table.table 
+                    thead 
+                        tr 
+                            th Name 
+                            th Members 
+                            th Actions 
+                    tbody 
+                        if(projects.length==0)
+                            tr 
+                                td(colspan="3") No Data 
+                        else 
+                            each item in projects
+                                tr 
+                                    td=item.name 
+                                    td(width="40%")
+                                        each staff in item.projectstaffs
+                                            p=staff.name
+                                                span.badge.bg-warning=staff.role
+                                    td.row
+                                        a(href=`/project/update/${item._id}`,class="btn btn-warning col-3") Update 
+                                        .col-3 
+                                            form(action="/project/delete", method="post",onsubmit="return confirm('Do you really want to delete this project?');")
+                                                input(type="hidden", name="id",value=item._id)
+                                                input(type="submit", value="Delete",class="btn btn-danger")  

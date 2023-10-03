@@ -1,0 +1,10 @@
+1 appsetting.json -> connectionString "Server=.,1433;Database=[Name Database];User=sa;Password=soi0109;TrustServerCertificate=True;"
+2 Data
+3 Khai bao Enitity + DTO
+4 NuGet: SqlServer + Tool
+5 Class ..DBcontext
+6 Program.cs -> AddDbContext
+7 Tools -> NuGet PM -> Package Manager Console
+8 PM> add-migration 
+  PM> update-database
+  https://api-os-takumi.mihoyo.com/common/gacha_record/api/getGachaLog?authkey_ver=1&sign_type=2&lang=vi&authkey=YeJacTJQG1tKcdHASyMsjN5GCuUVsTEpxwTR2PHSGLBPFaSyzltvbDs8ijB%2fjnTudQsdCUBE13f1DJVUhqO9XEWQtxMA1N%2b58Kdd3nGkx%2bH977kPW77AX6IvrLJmXD4k9JO%2fchWUJgvgKTVYjO%2fBRi4Lay%2bRr4YRVmCgsH%2bgjL3t83KZSb8CroooRHjgGFub9rF%2bus%2bhD4zGNy7YBk5YU0o7mdahyeyQYg0qjB1zweM4zOM%2b9J25EK6gO0UWDNTBWzj8i%2fqq%2btYfOPHfaIVCD4XwwSQZjRkfQcW4FWzdwdnMK65CxypDjQ%2fgEU2%2bwdnNqtmjJuGzi8gPN6lJQ7GA%2fomcODSvGK1f4dB9AMFCC%2f3wyaTNy6GeFC5LQGNn%2fSXQEcAfAVxLFr5llG2g%2fsOVfncRL4tfbJaUVgW%2b056Mesm1WUZQjK6%2fhS%2bKuBBQars1LnawlIhuVw%2bBWwlLcUeIkQAUQhRNUZJDIfxZFpfu7so8%2fDezT9rRYu44ku2aMh%2bhAQlmhHgF5wAJgdLNGnicbQ2KN6r3EvwOOgLd4RCOqz7QNsJqqeHk%2b%2firh0Dx2RzeT9gTBxI9Oz2Go4N0%2fUIh%2bRFPFjAlWGe0soPZMW2pTlGcpo2H9tlH9QsKFO4tFS2hBDegGfKHxam3NNZkYiOpO7Xi9gKQ7y73doXCXXEd2eU%3d&game_biz=hkrpg_global

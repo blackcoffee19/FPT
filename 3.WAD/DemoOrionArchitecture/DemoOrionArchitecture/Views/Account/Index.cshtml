@@ -1,0 +1,35 @@
+﻿@model DemoOrionArchitecture.Models.LoginViewModel;
+@{
+    Layout = null;
+}
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h3>Login</h3>
+                <form asp-action="Login" method="post">
+                    <div>
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email"/>
+                    </div>
+                    <div>
+                        <label asp-for="Password" ></label>
+                        <input asp-for="Password" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Login" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

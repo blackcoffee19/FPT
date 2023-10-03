@@ -1,0 +1,38 @@
+extends ../layout 
+block content 
+    .container-fluid 
+        .row 
+            .col-lg-8.col-md-10.mx-auto 
+                h3.text-center Create new Customer 
+                if(error)
+                    .alert.alert-danger=error 
+                if(message)
+                    .alert.alert-success=message 
+                a(href="/customer",class="btn btn-dark my-3") Back To List 
+                form(action="/customer/create", method="post",enctype="multipart/form-data")
+                    .row.mb-3 
+                        label(for="name",class="col-3 col-form-label") Name 
+                        .col-9 
+                            input(type="text",name="name",class="form-control")  
+                    .row.mb-3 
+                        label(for="phone",class="col-3 col-form-label") Phone 
+                        .col-9 
+                            input(type="text",name="phone",class="form-control")
+                    .row.mb-3 
+                        label(for="email",class="col-3 col-form-label") Email 
+                        .col-9 
+                            input(type="email",name="email",class="form-control")
+                    .row.mb-3 
+                        label(for="password",class="col-3 col-form-label") Password 
+                        .col-9 
+                            input(type="password",name="password",class="form-control")
+                    .row.mb-3 
+                        label(for="repassword",class="col-3 col-form-label") Confirm Password 
+                        .col-9 
+                            input(type="password",name="repassword",class="form-control")
+                    .row.mb-3 
+                        label(for="image",class="col-3 col-form-label") Image 
+                        .col-9 
+                            input(type="file",name="image",class="form-file")
+                    .row 
+                        input(type="submit", value="Create",class="btn btn-primary col-3 mx-auto")
