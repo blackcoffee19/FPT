@@ -1,0 +1,40 @@
+﻿@model AccountDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto pt-5">
+                <h2 class="text-center shadow">Login</h2>
+                <hr />
+                <form method="post">
+                    <div class="mb-3">
+                        <label class="form-label col-3 " asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control"/>
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label col-3 " asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <input type="submit" class="btn btn-primary col-3 mx-auto" value="Signin" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

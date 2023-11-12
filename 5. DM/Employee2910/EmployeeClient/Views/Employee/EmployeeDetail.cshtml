@@ -1,0 +1,28 @@
+﻿@model EmployeeDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeDetail</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mx-auto pt-5">
+                <h2>Employee Detail</h2>
+                <p>Employee Id: @Html.DisplayFor(x=>x.EmployeeId)</p>
+                <p>Employee Name: @Html.DisplayFor(x=>x.EmployeeName)</p>
+                <p>Age: @Html.DisplayFor(x=>x.Age)</p>
+                <a  asp-action="ListEmployee" class="text-warning text-decoration-none mt-3">List Employee</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DU4aiATaoCnbb4+D5Jz5kPqfcn7JWHtkHTKJuyG1heM=",
+  "Source": "WAPI_MyEmployee",
+  "BasePath": "_content/WAPI_MyEmployee",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

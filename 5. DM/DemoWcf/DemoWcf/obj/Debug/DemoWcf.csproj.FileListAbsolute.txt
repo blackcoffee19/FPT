@@ -1,0 +1,12 @@
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\obj\Debug\DemoWcf.csproj.AssemblyReference.cache
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\obj\Debug\DemoWcf.csproj.CoreCompileInputs.cache
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\DemoWcf.dll.config
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\DemoWcf.dll
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\DemoWcf.pdb
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\EntityFramework.dll
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\EntityFramework.SqlServer.dll
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\EntityFramework.xml
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\bin\EntityFramework.SqlServer.xml
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\obj\Debug\DemoWcf.csproj.CopyComplete
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\obj\Debug\DemoWcf.dll
+C:\code\FPT\5. DM\DemoWcf\DemoWcf\obj\Debug\DemoWcf.pdb

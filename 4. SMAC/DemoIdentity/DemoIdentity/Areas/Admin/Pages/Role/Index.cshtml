@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+}
+<h1>Role List</h1>
+<form method="post" class="my-1 d-inline">
+    <button asp-page="./Add" asp-page-handler="StartNewRole" class="btn btn-secondary">Add New Role</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.Roles)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>
+                    <form method="post" class="my-1 d-inline">
+                        <button asp-page="./Add" name="Input.Id" value="@item.Id" asp-page-handler="StartUpdate" class="btn btn-secondary">Edit Role</button>
+                    </form>
+
+                </td>
+                <td>
+                    <form method="post" class="my-1 d-inline">
+                        <button asp-page="./Delete" name="Input.Id"  value="@item.Id" class="btn btn-outline-danger">Delete Role</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

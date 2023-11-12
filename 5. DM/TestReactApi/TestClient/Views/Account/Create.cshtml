@@ -1,0 +1,66 @@
+﻿@model AccountDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto pt-5">
+                <h3>Create Account</h3>
+                <a asp-action="ListAccount">Back To List</a>
+                <hr />
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <input asp-for="Photo" class="form-control" />
+                        </div>
+                        <div class="col-8">
+                            <div class="row mb-3">
+                                <label asp-for="Name" class="form-label"></label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="Email" class="form-label"></label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="Password" class="form-label"></label>
+                                <input asp-for="Password"  class="form-control" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="ConfirmPassword" class="form-label"></label>
+                                <input asp-for="ConfirmPassword" class="form-control" />
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="Admin" class="form-label"></label>
+                                <select asp-for="Admin" class="form-select">
+                                    <option value="true">Admin</option>
+                                    <option value="false">Customer</option>
+                                </select>
+                                <span asp-validation-for="Admin" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <input type="submit" value="Update" class="btn btn-primary col-3" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

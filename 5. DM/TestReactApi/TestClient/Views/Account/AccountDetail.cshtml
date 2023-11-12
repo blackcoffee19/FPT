@@ -1,0 +1,44 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@model AccountDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Account Detail</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto pt-4">
+                <h2>Account Detail</h2>
+                <hr />
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <img src="" alt="@Model.Name" class="img-fluid"/>
+                    </div>
+                    <div class="col-8">
+                        <p>Name: <b>@Html.DisplayFor(x=>Model.Name)</b></p>
+                        <p>Email: <b>@Html.DisplayFor(x=>Model.Email)</b></p>
+                        
+                        <p>Role: @if (Model.Admin.Value == true) { <b>Admin</b>}else{<b>Customer</b>}</p>
+                    </div>
+                    @if (Model.Admin.Value != true && HttpContextAccessor?.HttpContext?.Session.GetInt32("User")==Model.Id)
+                    {
+                        <a href="history.back()" >Logout</a>
+                    }else{
+                        <a asp-action="ListAccount" >List Account</a>
+                        <a asp-action="Index">Logout</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

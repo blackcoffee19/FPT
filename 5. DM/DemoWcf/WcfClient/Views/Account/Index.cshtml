@@ -1,0 +1,44 @@
+﻿@model WcfClient.Models.AccountDto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 mx-auto pt-5">
+                <h3>Login</h3>
+                <hr />
+                <form asp-action="Login" method="post">
+                    <div class="row mb-3">
+                        <label for="username" class="col-form-label col-3"></label>
+                        <div class="col-9">
+                            <input name="username" type="text" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="password" class="col-form-label col-3"></label>
+                        <div class="col-9">
+                            <input name="password" type="password" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Login" class="btn btn-primary col-2 mx-auto" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

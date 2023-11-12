@@ -1,0 +1,12 @@
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\obj\Debug\EmployeeWcf.csproj.AssemblyReference.cache
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\obj\Debug\EmployeeWcf.csproj.CoreCompileInputs.cache
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EmployeeWcf.dll.config
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EmployeeWcf.dll
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EmployeeWcf.pdb
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EntityFramework.dll
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EntityFramework.SqlServer.dll
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EntityFramework.xml
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\bin\EntityFramework.SqlServer.xml
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\obj\Debug\EmployeeWcf.csproj.CopyComplete
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\obj\Debug\EmployeeWcf.dll
+C:\code\FPT\5. DM\Employee2910\EmployeeWcf\obj\Debug\EmployeeWcf.pdb

@@ -1,0 +1,40 @@
+﻿@model EmployLogin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto col-md-10 pt-5">
+                <h2 class="text-center">Login</h2>
+                <a asp-action="Create" class="btn btn-outline-info">Create New</a>
+                <form method="post">
+                    <div class="row mb-3">
+                        <label asp-for="EmployeeId" class="form-label mb-2"></label>
+                        <input asp-for="EmployeeId" class="form-control" />
+                        <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Password" class="form-label mb-2"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <input type="submit" class="btn btn-primary col-3" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

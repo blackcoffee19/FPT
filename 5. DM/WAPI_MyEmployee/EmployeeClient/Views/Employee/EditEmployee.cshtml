@@ -1,0 +1,53 @@
+﻿@model EmployeeDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditEmployee</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 pt-5 mx-auto">
+                <h3 class="text-center">Create New Employee</h3>
+                <hr />
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post">
+                            <div class="row mb-3">
+                                <label asp-for="EmployeeId" class="form-label"></label>
+                                <input asp-for="EmployeeId" class="form-control" readonly />
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="EmployeeName" class="form-label"></label>
+                                <input asp-for="EmployeeName" class="form-control" />
+                                <span asp-validation-for="EmployeeName"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="Age" class="form-label"></label>
+                                <input asp-for="Age" class="form-control" />
+                                <span asp-validation-for="Age"></span>
+                            </div>
+                            <div class="row mb-3">
+                                <label asp-for="Password"></label>
+                                <input asp-for="Password" class="form-control" value="@Model.Password" />
+                                <span asp-validation-for="Password"></span>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Create" class="btn btn-primary col-3" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

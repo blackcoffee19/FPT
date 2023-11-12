@@ -68,7 +68,6 @@ namespace TestAdminCRUD.Controllers
 
             }
             acc.Image = fileName;
-            acc.Role = "customer";
             if (ModelState.IsValid)
             {
                 Console.WriteLine(acc);

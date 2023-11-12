@@ -1,0 +1,44 @@
+﻿@model AccountDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Account Detail</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-5 mx-auto pt-4">
+                <h2 class="text-center">Profile</h2>
+                <table class="table mt-3">
+                    <tr>
+                        <td>@Html.DisplayNameFor(x=>Model.Email)</td>
+                        <td>@Html.DisplayFor(x=>Model.Email)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(x=>Model.Fullname)</td>
+                        <td>@Html.DisplayFor(x=>Model.Fullname)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(x=>Model.Role)</td>
+                        <td>@if (Model.Role == 0)
+                            {
+                                <p>Customer</p>
+                            }else{
+                                <p>Admin</p>
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

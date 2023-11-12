@@ -1,0 +1,27 @@
+﻿@page
+@model DemoIdentity.Areas.Admin.Pages.Role.AddUserRoleModel
+@{
+}
+<h1>Update Role to User </h1>
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <h4>Assign Role to @Model.Input.Name</h4>
+        <form method="post">
+            <partial name="_StatusMessage" model="@Model.StatusMessage" />
+            <div class="form-group">
+                <label for="" class="form-label">Role</label>
+                <select id="chooseRole" class="form-control" asp-for="@Model.Input.RoleNames" asp-items="@Model.AllRoles" multiple="multiple">
+
+                </select>
+            </div>
+            <input type="hidden" asp-for="@Model.Input.Id" />
+            <input type="hidden" asp-for="@Model.IsConfirm" /> 
+            <a class="btn btn-secondary" asp-page="./User">Back to User</a>
+            <input type="submit" class="btn btn-primary" value="Save" />
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

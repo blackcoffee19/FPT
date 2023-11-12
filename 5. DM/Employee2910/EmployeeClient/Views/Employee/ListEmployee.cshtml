@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EmployeeDto>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListEmployee</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 mx-auto pt-5">
+                <h3>List Employee</h3>
+                <a asp-action="Create" class="btn btn-outline-primary">Create New</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(x=>Model.First().EmployeeId)</th>
+                            <th>@Html.DisplayNameFor(x=>Model.First().EmployeeName)</th>
+                            <th>@Html.DisplayNameFor(x=>Model.First().Age)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Any())
+                        {
+                            @foreach(var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(x=>item.EmployeeId)</td>
+                                    <td>@Html.DisplayFor(x=>item.EmployeeName)</td>
+                                    <td>@Html.DisplayFor(x=>item.Age)</td>
+                                    <td>
+                                        <a asp-action="Update" asp-route-id="@item.EmployeeId" class="text-warning">Update</a>
+                                    </td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.EmployeeId" class="text-danger" onclick="return confirm('Do you want to delete Employee @item.EmployeeName?');">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center">No data</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

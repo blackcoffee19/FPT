@@ -21,43 +21,46 @@
                 <div class="row">
                     <a asp-action="Create" class="btn btn-primary col-3 mx-auto" >Create new Account</a>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                        <td>@Html.DisplayNameFor(x=>x.Id)</td>
-                        <td>@Html.DisplayNameFor(x=>x.Name)</td>
-                        <td>@Html.DisplayNameFor(x=>x.Image)</td>
-                        <td>@Html.DisplayNameFor(x=> x.Email)</td>
-                        <td>@Html.DisplayNameFor(x=>x.Password)</td>
-                        <td>@Html.DisplayNameFor(x=>x.Role)</td>
-                        </tr>
-                        
-                    </thead>
-                    <tbody>
-                        @if(Model == null)
-                        {
+                <div class="row">
+
+                    <table class="table col-12">
+                        <thead>
                             <tr>
-                                <td colspan="4">No Data</td>
+                            <td>@Html.DisplayNameFor(x=>x.Id)</td>
+                            <td>@Html.DisplayNameFor(x=>x.Name)</td>
+                            <td>@Html.DisplayNameFor(x=>x.Image)</td>
+                            <td>@Html.DisplayNameFor(x=> x.Email)</td>
+                            <td>@Html.DisplayNameFor(x=>x.Password)</td>
+                            <td>@Html.DisplayNameFor(x=>x.Role)</td>
                             </tr>
-                        }
-                        else
-                        {
-                            @foreach(var item in Model)
+                        
+                        </thead>
+                        <tbody>
+                            @if(Model == null)
                             {
                                 <tr>
-                                    <td>@Html.DisplayFor(x=>item.Id)</td>
-                                    <td>@Html.DisplayFor(x=>item.Name)</td>
-                                    <td style="width:120px">
-                                        <img src="~/Images/@item.Image" class="img-fluid"/>
-                                    </td>
-                                    <td>@Html.DisplayFor(x=>item.Email)</td>
-                                    <td>@Html.DisplayFor(x=>item.Password)</td>
-                                    <td>@Html.DisplayFor(x=>item.Role)</td>
+                                    <td colspan="4">No Data</td>
                                 </tr>
                             }
-                        }
-                    </tbody>
-                </table>
+                            else
+                            {
+                                @foreach(var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(x=>item.Id)</td>
+                                        <td>@Html.DisplayFor(x=>item.Name)</td>
+                                        <td style="width:120px">
+                                            <img src="~/Images/@item.Image" class="img-fluid"/>
+                                        </td>
+                                        <td>@Html.DisplayFor(x=>item.Email)</td>
+                                        <td class="overflow-hidden">@Html.DisplayFor(x=>item.Password)</td>
+                                        <td>@Html.DisplayFor(x=>item.Role)</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
                 <a asp-action="Signup" class="btn btn-dark mt-3">Signup</a>
             </div>
         </div>

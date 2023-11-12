@@ -7,12 +7,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using DemoIdentity.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace DemoIdentity.Areas.Identity.Pages.Account.Manage
 {
+    /*[Authorize]*//*[Authorize]*/
     public class IndexModel : PageModel
     {
         private readonly UserManager<AppUser> _userManager;

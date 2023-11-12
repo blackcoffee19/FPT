@@ -1,0 +1,29 @@
+﻿@page
+@using DemoIdentity.Areas.Admin.Pages.Role;
+@model AddModel
+@{
+    var title = Model.IsUpdate ? "Update Role" : "Create New Role";
+    var btnText = Model.IsUpdate ? "Update" : "Create";
+}
+<h1>@title</h1>
+<partial name="_StatusMessage" model="@Model.StatusMessage"/>
+<div class="row">
+    <div class="col-md-7 mx-auto">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" asp-for="Input.Id" />
+            <input type="hidden" asp-for="IsUpdate" />
+            <div class="form-group">
+                <label asp-for="Input.Name" class="form-label"></label>
+                <input class="form-control" asp-for="Input.Name" />
+            </div>
+            <div class="row mt-3">
+                <button type="submit" asp-page-handler="AddOrUpdate" class="btn btn-primary col-3 mx-auto">@btnText</button>
+                <a class="btn btn-secondary col-3 mx-auto" asp-page="./Index">Role List</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}

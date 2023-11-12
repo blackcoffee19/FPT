@@ -294,3 +294,4 @@ C:\code\FPT\4. SMAC\DemoIdentity\DemoIdentity\bin\Debug\net7.0\runtimes\win-arm\
 C:\code\FPT\4. SMAC\DemoIdentity\DemoIdentity\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\code\FPT\4. SMAC\DemoIdentity\DemoIdentity\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\code\FPT\4. SMAC\DemoIdentity\DemoIdentity\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\code\FPT\4. SMAC\DemoIdentity\DemoIdentity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll

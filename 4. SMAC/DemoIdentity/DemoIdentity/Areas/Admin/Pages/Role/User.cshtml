@@ -1,0 +1,40 @@
+﻿@page
+@model UserModel
+@{
+}
+<h1>User List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Role
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Users.Any())
+        {
+            @foreach(var item in Model.Users)
+            {
+                <tr>
+                    <td>@item.UserName</td>
+                    <td>@item.ListRole</td>
+                    <td>
+                        <form method="post" class="d-inline">
+                            <button type="submit" name="Input.Id" value="@item.Id" class="text-warning text-decoration-none" asp-page="./AddUserRole">Edit Role</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }else{
+            <tr><td colspan="3">No data</td></tr>
+        }
+    </tbody>
+</table>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
