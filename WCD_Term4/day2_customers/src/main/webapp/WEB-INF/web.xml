@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description></description>
+    <display-name>PoccessCustomer</display-name>
+    <servlet-name>PoccessCustomer</servlet-name>
+    <servlet-class>vn.aptech.PoccessCustomer</servlet-class>
+    <init-param>
+    	<param-name>name</param-name>
+    	<param-value>Welcome to T1.2206.M1 Class</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PoccessCustomer</servlet-name>
+    <url-pattern>/PoccessCustomer</url-pattern>
+  </servlet-mapping>
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error404.html</location>
+  </error-page>
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/error501.html</location>
+  </error-page>
+  <display-name>day2_customers</display-name>
+  <welcome-file-list>
+    <welcome-file>customer.jsp</welcome-file>
+    
+  </welcome-file-list>
+  <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+         D:\FPT\WCD_Term4\day2_customers\upload
+     </param-value> 
+</context-param>
+</web-app>

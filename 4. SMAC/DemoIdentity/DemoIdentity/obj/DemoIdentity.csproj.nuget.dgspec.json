@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj": {}
+    "D:\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj": {}
   },
   "projects": {
-    "C:\\code\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj": {
+    "D:\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj",
+        "projectUniqueName": "D:\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj",
         "projectName": "DemoIdentity",
-        "projectPath": "C:\\code\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj",
-        "packagesPath": "C:\\Users\\blackcoffee\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\obj\\",
+        "projectPath": "D:\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\DemoIdentity.csproj",
+        "packagesPath": "C:\\Users\\didi0\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\4. SMAC\\DemoIdentity\\DemoIdentity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\blackcoffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\didi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

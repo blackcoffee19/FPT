@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj": {}
+    "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj": {}
   },
   "projects": {
-    "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
+    "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj",
+        "projectUniqueName": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj",
         "projectName": "OA.Domain",
-        "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj",
-        "packagesPath": "C:\\Users\\blackcoffee\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\obj\\",
+        "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj",
+        "packagesPath": "C:\\Users\\didi0\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\blackcoffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\didi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,25 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj": {
+    "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj",
+        "projectUniqueName": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj",
         "projectName": "DemoOrionArchitecture",
-        "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj",
-        "packagesPath": "C:\\Users\\blackcoffee\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\obj\\",
+        "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\DemoOrionArchitecture.csproj",
+        "packagesPath": "C:\\Users\\didi0\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\DemoOrionArchitecture\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\blackcoffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\didi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,21 +77,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
-                "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj"
+              "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
+                "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj"
               },
-              "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj": {
-                "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj"
+              "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj": {
+                "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj"
               },
-              "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj": {
-                "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj"
+              "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj": {
+                "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj"
               }
             }
           }
@@ -141,25 +131,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj": {
+    "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj",
+        "projectUniqueName": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj",
         "projectName": "OA.Repository",
-        "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj",
-        "packagesPath": "C:\\Users\\blackcoffee\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\obj\\",
+        "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj",
+        "packagesPath": "C:\\Users\\didi0\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\blackcoffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\didi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -167,15 +153,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
-                "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj"
+              "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
+                "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj"
               }
             }
           }
@@ -211,25 +196,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj": {
+    "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj",
+        "projectUniqueName": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj",
         "projectName": "OA.Service",
-        "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj",
-        "packagesPath": "C:\\Users\\blackcoffee\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\obj\\",
+        "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\OA.Service.csproj",
+        "packagesPath": "C:\\Users\\didi0\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OAService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\blackcoffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\didi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -237,18 +218,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
-                "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj"
+              "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj": {
+                "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\AODomain\\OA.Domain.csproj"
               },
-              "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj": {
-                "projectPath": "C:\\code\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj"
+              "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj": {
+                "projectPath": "D:\\FPT\\3.WAD\\DemoOrionArchitecture\\OARepository\\OA.Repository.csproj"
               }
             }
           }
@@ -278,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

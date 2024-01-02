@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj": {}
+    "D:\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj": {}
   },
   "projects": {
-    "C:\\code\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj": {
+    "D:\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj",
+        "projectUniqueName": "D:\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj",
         "projectName": "SocialMediaPJ",
-        "projectPath": "C:\\code\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj",
-        "packagesPath": "C:\\Users\\blackcoffee\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\obj\\",
+        "projectPath": "D:\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\SocialMediaPJ.csproj",
+        "packagesPath": "C:\\Users\\didi0\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\SocialMedia\\SocialMediaPJ\\SocialMediaPJ\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\blackcoffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\didi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
